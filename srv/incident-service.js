@@ -9,11 +9,11 @@ module.exports = async function () {
     // const db = await cds.connect.to('db') // connect to database service
     const { Incidents, Customers, MeasPoint, MeasPoint1 } = this.entities         // get reflected definitions
 
-    //const service1 = await cds.connect.to('JMREUSABLE_SB');
+    const service1 = await cds.connect.to('JMREUSABLE_SB');
 
-    // this.on('READ', [MeasPoint, MeasPoint1], req => {
-    //     return service1.tx(req).run(req.query);
-    // });
+    this.on('READ', [MeasPoint, MeasPoint1], req => {
+        return service1.tx(req).run(req.query);
+    });
 
     this.before('CREATE', 'Incidents', (req) => {
         console.log('this.before(CREATE,Incidents) is triggered');
