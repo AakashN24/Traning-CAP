@@ -1,7 +1,7 @@
 {
   "_version": "1.59.0",
   "sap.app": {
-    "id": "incident",
+    "id": "incidents",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
@@ -13,7 +13,7 @@
     "sourceTemplate": {
       "id": "@sap/generator-fiori:lrop",
       "version": "1.14.0",
-      "toolsId": "c1e33c2e-c54c-4ea2-96d7-9bbb37bb4815"
+      "toolsId": "b514cdd1-0482-4ab6-9daa-9b719a7a94b5"
     },
     "dataSources": {
       "mainService": {
@@ -61,7 +61,7 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "incident.i18n.i18n"
+          "bundleName": "incidents.i18n.i18n"
         }
       },
       "": {
@@ -138,5 +138,9 @@
   "sap.fiori": {
     "registrationIds": [],
     "archeType": "transactional"
+  },
+  "sap.cloud": {
+    "public": true,
+    "service": "incidentapprouter"
   }
 }

@@ -1,2 +1,2 @@
 
-using from './incident/annotations';
+using from './incidents/annotations';
