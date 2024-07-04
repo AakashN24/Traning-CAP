@@ -39,7 +39,7 @@
         "credentials": {
           "url": "http://vmimrud22.hcldigilabs.com:50100/sap/opu/odata/ISAMJMCO/JMREUSABLE_SB/",
           "username": "ANAMBARU",
-          "password": "Aakash@112541"
+          "password": "******"
         }
       },
       "[production]": {
